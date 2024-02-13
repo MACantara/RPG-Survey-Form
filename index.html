@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" rel="stylesheet">
+  <title>RPG Class Survey</title>
+</head>
+
+<body>
+  <div class="py-5 mx-auto" style="max-width: 720px;">
+    <h1 id="title" class="text-center mb-4">RPG Class Survey</h1>
+    <p id="description" class="text-justify mb-4">
+      Welcome to our RPG Class Survey! We're in the process of designing a new role-playing game (RPG) and we need your
+      help. We want to know what classes you prefer when playing RPGs. Your input will help us create a game that's fun
+      and engaging for all players. So, please take a few minutes to complete this survey. Your feedback is greatly
+      appreciated. Thank you!
+    </p>
+    <form id="survey-form">
+      <fieldset class="form-group form-check">
+        <legend id="consent-label">Data Privacy Act Policy Consent:</legend>
+        <input type="checkbox" class="form-check-input" id="privacyPolicy" required>
+        <p class="text-justify">
+          By checking this box, I give my consent to the collection, storage, and use of my personal information for the
+          purpose of participating in this survey, in accordance with the <a
+            href="https://www.officialgazette.gov.ph/2012/08/15/republic-act-no-10173/" target="_blank">Data Privacy Act
+            of 2012</a> of the Philippines.
+        </p>
+      </fieldset>
+      <fieldset class="form-group">
+        <legend id="name-label">Name:</legend>
+        <input type="text" class="form-control" id="name" placeholder="Name" required>
+      </fieldset>
+      <fieldset class="form-group">
+        <legend id="email-label">Email:</legend>
+        <input type="email" class="form-control" id="email" placeholder="Email" required>
+      </fieldset>
+      <fieldset class="form-group">
+        <legend id="number-label">Number:</legend>
+        <input type="number" class="form-control" id="number" placeholder="1234567890" min="4" max="999999999999">
+      </fieldset>
+      <fieldset class="form-group">
+        <legend id="gender-label">What is your gender?</legend>
+        <select class="form-control" id="dropdown">
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="prefer-not-to-say">Prefer not to say</option>
+        </select>
+      </fieldset>
+      <fieldset class="form-group">
+        <legend id="age-label">Age:</legend>
+        <input type="number" class="form-control" id="age" placeholder="Age" min="1" max="120">
+      </fieldset>
+
+      <fieldset class="form-group">
+        <legend id="location-label">Location:</legend>
+        <input type="text" class="form-control" id="location" placeholder="City, Country">
+      </fieldset>
+
+      <fieldset class="form-group">
+        <legend id="frequency-label">How often do you play RPGs?</legend>
+        <select class="form-control" id="frequency">
+          <option value="daily">Daily</option>
+          <option value="weekly">Weekly</option>
+          <option value="monthly">Monthly</option>
+          <option value="rarely">Rarely</option>
+        </select>
+      </fieldset>
+
+      <fieldset class="form-group">
+        <legend id="favoriteGame-label">Favorite RPG Game:</legend>
+        <input type="text" class="form-control" id="favoriteGame" placeholder="Favorite RPG Game">
+      </fieldset>
+
+      <fieldset class="form-group">
+        <legend id="platform-label">Preferred Gaming Platform:</legend>
+        <select class="form-control" id="platform">
+          <option value="pc">PC</option>
+          <option value="console">Console</option>
+          <option value="mobile">Mobile</option>
+        </select>
+      </fieldset>
+
+      <fieldset class="form-group">
+        <legend id="source-label">How did you hear about our survey/game?</legend>
+        <input type="text" class="form-control" id="source" placeholder="Source">
+      </fieldset>
+
+      <fieldset class="form-group">
+        <legend id="experience-label">What is your RPG gaming experience?</legend>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="experience" id="beginner" value="beginner">
+          <label for="beginner">Beginner</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="experience" id="casual" value="casual">
+          <label for="casual">Casual</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="experience" id="veteran" value="veteran">
+          <label for="veteran">Veteran</label>
+        </div>
+      </fieldset>
+
+      <fieldset class="form-group">
+        <legend id="class-label">What class do you prefer?</legend>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="swordsman" value="swordsman">
+          <label class="form-check-label" for="swordsman">Swordsman</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="archer" value="archer">
+          <label class="form-check-label" for="archer">Archer</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="tank" value="tank">
+          <label class="form-check-label" for="tank">Tank</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="assassin" value="assassin">
+          <label class="form-check-label" for="assassin">Assassin</label>
+        </div>
+        <div class="form-group row">
+          <label for="other" class="col-sm-2 col-form-label">Other:</label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" id="other">
+          </div>
+        </div>
+      </fieldset>
+
+      <fieldset class="form-group">
+        <legend id="comment-label">Comment:</legend>
+        <textarea class="form-control" id="comment" rows="3"
+          placeholder="Write down your suggestion to improve this survey..."></textarea>
+      </fieldset>
+      <button id="submit" type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </div>
+  <!-- Bootstrap JS and jQuery -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</body>
+
+</html>

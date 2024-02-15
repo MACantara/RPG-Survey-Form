@@ -40,3 +40,11 @@ function formatPhoneNumber(input) {
     }
     input.value = number;
 }
+
+document.getElementById('age').addEventListener('input', function(e) {
+    let age = e.target.value;
+    if (age < 1 || age > 120) {
+        alert('Please enter a valid age between 1 and 120.');
+        e.target.value = '';
+    }
+});

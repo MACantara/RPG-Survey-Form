@@ -1,3 +1,7 @@
 .max-width-720 {
     max-width: 720px;
 }
+
+#number-label {
+    margin-left: -16px;
+}

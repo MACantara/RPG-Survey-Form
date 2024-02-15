@@ -74,10 +74,10 @@ function checkOther(select) {
     }
 }
 
-document.getElementById('other').addEventListener('input', function(e) {
-    let other = e.target.value;
-    if (other.trim() === '') {
-        alert('Please enter a value for "Other".');
+document.getElementById('source').addEventListener('input', function(e) {
+    let source = e.target.value;
+    if (source.trim() === '') {
+        alert('Please enter how you heard about our survey/game.');
         e.target.value = '';
     }
 });

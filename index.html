@@ -41,8 +41,8 @@
         <input type="email" class="form-control" id="email" placeholder="Email">
       </fieldset>
       <fieldset class="form-group">
-        <legend id="number-label">Number:</legend>
-        <input type="number" class="form-control" id="number" placeholder="1234567890" min="4" max="999999999999">
+        <legend id="number-label">Phone Number:</legend>
+        <input type="text" class="form-control" id="number" placeholder="123-456-7890" oninput="formatPhoneNumber(this)">
       </fieldset>
       <fieldset class="form-group">
         <legend id="gender-label">What is your gender?</legend>

@@ -48,3 +48,11 @@ document.getElementById('age').addEventListener('input', function(e) {
         e.target.value = '';
     }
 });
+
+document.getElementById('location').addEventListener('input', function(e) {
+    let location = e.target.value;
+    if (location.trim() === '') {
+        alert('Please enter a valid location.');
+        e.target.value = '';
+    }
+});

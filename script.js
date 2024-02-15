@@ -41,26 +41,43 @@ function formatPhoneNumber(input) {
     input.value = number;
 }
 
-document.getElementById('age').addEventListener('input', function(e) {
+document.getElementById("age").addEventListener("input", function (e) {
     let age = e.target.value;
     if (age < 1 || age > 120) {
-        alert('Please enter a valid age between 1 and 120.');
-        e.target.value = '';
+        alert("Please enter a valid age between 1 and 120.");
+        e.target.value = "";
     }
 });
 
-document.getElementById('location').addEventListener('input', function(e) {
+document.getElementById("location").addEventListener("input", function (e) {
     let location = e.target.value;
-    if (location.trim() === '') {
-        alert('Please enter a valid location.');
-        e.target.value = '';
+    if (location.trim() === "") {
+        alert("Please enter a valid location.");
+        e.target.value = "";
     }
 });
 
-document.getElementById('favoriteGame').addEventListener('input', function(e) {
-    var favoriteGame = e.target.value;
-    if (favoriteGame.trim() === '') {
-        alert('Please enter your favorite RPG game.');
+document.getElementById("favoriteGame").addEventListener("input", function (e) {
+    let favoriteGame = e.target.value;
+    if (favoriteGame.trim() === "") {
+        alert("Please enter your favorite RPG game.");
+        e.target.value = "";
+    }
+});
+
+function checkOther(select) {
+    const otherInput = document.getElementById("otherPlatformGroup");
+    if (select.value === "others") {
+        otherInput.style.display = "block";
+    } else {
+        otherInput.style.display = "none";
+    }
+}
+
+document.getElementById('other').addEventListener('input', function(e) {
+    let other = e.target.value;
+    if (other.trim() === '') {
+        alert('Please enter a value for "Other".');
         e.target.value = '';
     }
 });

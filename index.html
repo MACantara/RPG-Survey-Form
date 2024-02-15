@@ -594,11 +594,20 @@
 
       <fieldset class="form-group">
         <legend id="platform-label">Preferred Gaming Platform:</legend>
-        <select class="form-control" id="platform">
-          <option value="pc">PC</option>
-          <option value="console">Console</option>
-          <option value="mobile">Mobile</option>
+        <select class="form-control" id="platform" onchange="checkOther(this)">
+          <option value="pc-windows">PC - Windows</option>
+          <option value="pc-mac">PC - Mac</option>
+          <option value="pc-linux">PC - Linux</option>
+          <option value="console-ps">Console - PlayStation</option>
+          <option value="console-xbox">Console - Xbox</option>
+          <option value="console-nintendo">Console - Nintendo</option>
+          <option value="mobile-android">Mobile - Android</option>
+          <option value="mobile-ios">Mobile - iOS</option>
+          <option value="others">Others</option>
         </select>
+        <div class="form-group" id="otherPlatformGroup" style="display: none;">
+          <input type="text" class="form-control" id="otherPlatform" placeholder="Please specify">
+        </div>
       </fieldset>
 
       <fieldset class="form-group">

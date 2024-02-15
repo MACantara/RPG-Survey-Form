@@ -56,3 +56,11 @@ document.getElementById('location').addEventListener('input', function(e) {
         e.target.value = '';
     }
 });
+
+document.getElementById('favoriteGame').addEventListener('input', function(e) {
+    var favoriteGame = e.target.value;
+    if (favoriteGame.trim() === '') {
+        alert('Please enter your favorite RPG game.');
+        e.target.value = '';
+    }
+});

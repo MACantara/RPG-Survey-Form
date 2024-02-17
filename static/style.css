@@ -1,0 +1,25 @@
+body {
+    background-color: red;
+    background-image: url('pixel-background.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: 'Press Start 2P', cursive;
+}
+
+.container-color {
+    background-color: #000022;
+    color: #ffffff;
+    border-radius: 4px;
+}
+
+p {
+    line-height: 2;
+}
+
+#phone-number-label {
+    margin-left: -16px;
+}
+
+#consent-label {
+    margin-left: -20px;
+}

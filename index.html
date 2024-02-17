@@ -25,13 +25,17 @@
     <form id="survey-form">
       <fieldset class="form-group form-check mb-5">
         <legend id="consent-label">Data Privacy Act Policy Consent:</legend>
-        <input type="checkbox" class="form-check-input" id="privacyPolicy" required>
-        <p class="text-justify">
-          By checking this box, I give my consent to the collection, storage, and use of my personal information for the
-          purpose of participating in this survey, in accordance with the <a
-            href="https://www.officialgazette.gov.ph/2012/08/15/republic-act-no-10173/" target="_blank">Data Privacy Act
-            of 2012</a> of the Philippines.
-        </p>
+        <div class="form-check">
+          <input type="checkbox" class="form-check-input" id="privacyPolicy" required>
+          <label class="form-check-label" for="privacyPolicy">
+            <p class="text-justify">
+              By checking this box, I give my consent to the collection, storage, and use of my personal information for the
+              purpose of participating in this survey, in accordance with the <a
+                href="https://www.officialgazette.gov.ph/2012/08/15/republic-act-no-10173/" target="_blank">Data Privacy Act
+                of 2012</a> of the Philippines.
+            </p>
+          </label>
+        </div>
       </fieldset>
       <fieldset class="form-group mb-5">
         <legend id="name-label">Name: (Optional)</legend>

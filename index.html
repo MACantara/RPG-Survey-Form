@@ -15,15 +15,15 @@
 
 <body>
   <div class="container py-5 mx-auto max-width-720">
-    <h1 id="title" class="text-center mb-4">RPG Class Survey</h1>
-    <p id="description" class="text-justify mb-4">
+    <h1 id="title" class="text-center mb-5">RPG Class Survey</h1>
+    <p id="description" class="text-justify mb-5">
       Welcome to our RPG Class Survey! We're in the process of designing a new role-playing game (RPG) and we need your
       help. We want to know what classes you prefer when playing RPGs. Your input will help us create a game that's fun
       and engaging for all players. So, please take a few minutes to complete this survey. Your feedback is greatly
       appreciated. Thank you!
     </p>
     <form id="survey-form">
-      <fieldset class="form-group form-check">
+      <fieldset class="form-group form-check mb-5">
         <legend id="consent-label">Data Privacy Act Policy Consent:</legend>
         <input type="checkbox" class="form-check-input" id="privacyPolicy" required>
         <p class="text-justify">
@@ -33,15 +33,15 @@
             of 2012</a> of the Philippines.
         </p>
       </fieldset>
-      <fieldset class="form-group">
+      <fieldset class="form-group mb-5">
         <legend id="name-label">Name: (Optional)</legend>
         <input type="text" class="form-control" id="name" placeholder="Name">
       </fieldset>
-      <fieldset class="form-group">
+      <fieldset class="form-group mb-5">
         <legend id="email-label">Email: (Optional)</legend>
         <input type="email" class="form-control" id="email" placeholder="Email">
       </fieldset>
-      <fieldset class="form-group container-fluid">
+      <fieldset class="form-group container-fluid mb-5">
         <legend id="phone-number-label">Phone Number: (Optional)</legend>
         <div class="row">
           <div class="col-sm-5 pr-0 pl-0">
@@ -306,7 +306,7 @@
           </div>
         </div>
       </fieldset>
-      <fieldset class="form-group">
+      <fieldset class="form-group mb-5">
         <legend id="gender-label">Gender:</legend>
         <select class="form-control" id="dropdown">
           <option value="male">Male</option>
@@ -314,12 +314,12 @@
           <option value="prefer-not-to-say">Prefer not to say</option>
         </select>
       </fieldset>
-      <fieldset class="form-group">
+      <fieldset class="form-group mb-5">
         <legend id="age-label">Age:</legend>
         <input type="number" class="form-control" id="age" placeholder="Age" min="1" max="120">
       </fieldset>
 
-      <fieldset class="form-group">
+      <fieldset class="form-group mb-5">
         <legend id="country-label">Country:</legend>
         <select class="form-control" id="country" name="country">
           <option value="" selected disabled>Country</option>
@@ -578,7 +578,7 @@
         </select>
       </fieldset>
 
-      <fieldset class="form-group">
+      <fieldset class="form-group mb-5">
         <legend id="frequency-label">How often do you play RPGs?</legend>
         <select class="form-control" id="frequency">
           <option value="daily">Daily</option>
@@ -588,12 +588,12 @@
         </select>
       </fieldset>
 
-      <fieldset class="form-group">
+      <fieldset class="form-group mb-5">
         <legend id="favoriteGame-label">Favorite RPG Game:</legend>
         <input type="text" class="form-control" id="favoriteGame" placeholder="Favorite RPG Game">
       </fieldset>
 
-      <fieldset class="form-group">
+      <fieldset class="form-group mb-5">
         <legend id="platform-label">Preferred Gaming Platform:</legend>
         <select class="form-control" id="platform" onchange="checkOther(this)">
           <option value="pc-windows">PC - Windows</option>
@@ -606,17 +606,17 @@
           <option value="mobile-ios">Mobile - iOS</option>
           <option value="others">Others</option>
         </select>
-        <div class="form-group" id="otherPlatformGroup" style="display: none;">
+        <div class="form-group mb-5" id="otherPlatformGroup" style="display: none;">
           <input type="text" class="form-control" id="otherPlatform" placeholder="Please specify">
         </div>
       </fieldset>
 
-      <fieldset class="form-group">
+      <fieldset class="form-group mb-5">
         <legend id="source-label">How did you hear about our survey/game?</legend>
         <input type="text" class="form-control" id="source" placeholder="Source">
       </fieldset>
 
-      <fieldset class="form-group">
+      <fieldset class="form-group mb-5">
         <legend id="experience-label">What is your RPG gaming experience?</legend>
         <div class="form-check">
           <input class="form-check-input" type="radio" name="experience" id="beginner" value="beginner">
@@ -632,7 +632,7 @@
         </div>
       </fieldset>
 
-      <fieldset class="form-group">
+      <fieldset class="form-group mb-5">
         <legend id="class-label">What class do you prefer?</legend>
         <div class="form-check">
           <input class="form-check-input" type="checkbox" id="swordsman" value="swordsman">
@@ -658,12 +658,14 @@
         </div>
       </fieldset>
 
-      <fieldset class="form-group">
+      <fieldset class="form-group mb-5">
         <legend id="comment-label">Comment:</legend>
         <textarea class="form-control" id="comment" rows="3"
           placeholder="Write down your suggestion to improve this survey..."></textarea>
       </fieldset>
-      <button id="submit" type="submit" class="btn btn-primary">Submit</button>
+      <div class="d-flex justify-content-center">
+        <button id="submit" type="submit" class="btn btn-primary">Submit</button>
+      </div>
     </form>
   </div>
   <!-- Bootstrap JS and jQuery -->

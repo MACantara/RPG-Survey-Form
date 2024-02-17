@@ -1,5 +1,11 @@
 body {
     font-family: 'Press Start 2P', cursive;
+    background-color: #000033; /* deep blue */
+    color: #ffffff; /* white */
+}
+
+p {
+    line-height: 2;
 }
 
 #phone-number-label {

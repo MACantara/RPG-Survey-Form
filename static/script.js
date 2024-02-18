@@ -81,3 +81,7 @@ document.getElementById('source').addEventListener('input', function(e) {
         e.target.value = '';
     }
 });
+
+function showToast() {
+    $('.toast').toast('show');
+}
